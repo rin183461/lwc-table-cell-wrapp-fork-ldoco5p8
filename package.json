@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/rin183461.lwc-table-cell-wrapp-fork-ldoco5p8",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve d6QfSXUGHU4oOnx0VhMj --open"
+  }
+}

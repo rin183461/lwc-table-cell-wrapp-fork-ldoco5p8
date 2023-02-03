@@ -1,0 +1,38 @@
+<template>
+	<table class="slds-table slds-table_cell-buffer slds-table_bordered ">
+		<thead>
+			<tr class="slds-line-height_reset">
+				<th class="" scope="col">
+					<div class="slds-truncate" title="">Product Family</div>
+				</th>
+				<th class="" scope="col">
+					<div class="slds-truncate" title="">Asset Name</div>
+				</th>
+				<th class="" scope="col">
+					<div class="slds-truncate" title="">Asset Type</div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<template if:true={productArray}>
+				<template for:each={productArray} for:item="family">
+					<tr key={family.family} class="slds-hint-parent">
+						<td data-label="family" rowspan={family.rowspan}>
+							{family.family}
+						</td>
+					</tr>
+					<template for:each={family.products} for:item="product">
+						<tr key={product.assetName}>
+							<td key={product.assetName} data-label="family">
+								{product.assetName}
+							</td>
+							<td key={product.assetName} data-label="family">
+								{product.assetType}
+							</td>
+						</tr>
+					</template>
+				</template>
+			</template>
+		</tbody>
+	</table>
+</template>
