@@ -1,5 +1,5 @@
 <template>
-	<table class="slds-table slds-table_cell-buffer slds-table_bordered ">
+	<table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
 		<thead>
 			<tr class="slds-line-height_reset">
 				<th class="" scope="col">
@@ -23,7 +23,7 @@
 					</tr>
 					<template for:each={family.products} for:item="product">
 						<tr key={product.assetName}>
-							<td key={product.assetName} data-label="family">
+							<td key={product.assetName} class="slds-border_left" data-label="family">
 								{product.assetName}
 							</td>
 							<td key={product.assetName} data-label="family">
